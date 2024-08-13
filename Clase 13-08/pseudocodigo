@@ -1,0 +1,54 @@
+1) Definir estructuras
+a, b variables enteras      Var a,b:Entero
+punteroA,punteroB punteros      Var punteroA,punteroB:↑(apunta)Entero
+    ↓       ↓
+    A       B
+2)inicializacion/asignacion
+a=5,b=22                    a ← 15
+                            b ← 22 
+punteroA ← direccion(A) | punteroB ← direccion(B)
+
+3) Mostrar resultados
+Mostrar(A) // 15
+Mostrar(B) // 22
+Mostrar(punteroA↑) // 15
+Mostrar(punteroB↑) // 22
+
+byRef (pasas la ref, se modifica el valor orignal, desde dentro de la funcion)
+byVal (pasas una copia, la funcion no modif el dato original)
+
+Ejercicio 3
+Tengo que crear variable temporal entera, para intermcabiar sin perder datos (sin punteros)
+-Con punteros
+temp ← punteroA
+punteroA↑ ← punteroB↑
+punteroB↑ ← temp 
+
+Array ← tipo de dato mas estructurado
+
+Ejercicio 4 : 3|5|1|9|2|8
+1)
+Tipo    array : Entero
+Var     min,max,indice: Entero
+2)
+array ← [3,5,1,9,2,8]
+longitud(array) //  6
+min ← array[0]
+max ← array[0]
+3)
+Para i = 1 hasta longitud(arr) - 1
+Si arr(i) > max
+    max ← arr(i)
+Si arr(i) < min 
+    min ← arr(i)
+fin para
+
+
+-----------------------------------
+arr ; Ent[] ---> [6,4,5,1,9]
+mid : Ent[] => mid <- arr[]
+
+Si long(arr)%2 = 0
+
+
+
