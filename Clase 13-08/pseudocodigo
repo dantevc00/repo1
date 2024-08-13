@@ -45,10 +45,68 @@ fin para
 
 
 -----------------------------------
+EJ 8
 arr ; Ent[] ---> [6,4,5,1,9]
 mid : Ent[] => mid <- arr[]
+largo : Ent <- long(arr)
+Si largo%2 = 0
+    mitad: Ent <_largo/2
+    mids.agegar(arr(mitad-1))
+    mids.agregar(arr(mitad))
+fin si:
+Sino 
+    mitad: Ent <-largo//2
+    mids.agegar(arr(mitad))
+fin sino
+Mostrar(mids)
+-----------------------------------
+EJ 9
+arr1:Ent[],i:Ent <-0
+arr2:Ent[]
+son_iguales:Bool <- false
+    para i=0 hasta long(arr1)-1
+    Si arr1[i]==arr2[i]
 
-Si long(arr)%2 = 0
+
+
+    finsi
+    sino
+    break
+    finsino
+------------------------------------
+EJ 9 con punteros
+------------------------------------
+Ej 6
+arr:Ent[], i,j:Ent <-0
+reverso:Ent[]
+puntInicio:↑Ent
+puntFin:↑Ent
+puntInicio <- direccion(arr[0])
+puntFin <-direccion(arr[long(arr)-1])
+#sinpunteros
+j<-long(arr)-1
+para i=0 hasta long(arr)-1
+    reverso[j] <- arr[i]
+    j <- j-i
+finpara
+#ConPunteros
+para i=0 hasta long(arr)-1
+    reverso[i]<-puntFin↑
+    puntFin <- puntFin-1
+finpara
+
+Otro EJ
+Por valor 
+funcion duplicar (numero:Ent): Entero
+    numero <- numero*2
+    devolver numero
+finfuncion
+
+Por referencia
+Porced incrementar (refnumero: Ent)
+    numero <- numero + 1
+finproced
+
 
 
 
